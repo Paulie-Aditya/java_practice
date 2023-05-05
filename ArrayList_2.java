@@ -21,7 +21,7 @@ public class ArrayList_2{
         ArrayList<Integer> integers = new ArrayList<>();
 
         while(true){
-            System.out.println("Enter Option: ");
+            System.out.print("Enter Option: ");
             String option = s.next();
 
             if (option.equals("a"))
@@ -31,7 +31,9 @@ public class ArrayList_2{
 
                 while(n>0){
                     System.out.println("Enter number: ");
-                    integers.add(s.nextInt());
+                    int x = s.nextInt();
+                    integers.add(x);
+                    System.out.println("Added "+x);
                     n--;
                     }
             }
@@ -46,9 +48,10 @@ public class ArrayList_2{
                     int x = s.nextInt();
                     try{
                         integers.remove(x);
+                        System.out.println("Removed "+x);
                         n--;
                     }catch(Exception e){
-                        System.out.print("Number not in list, try again");
+                        System.out.println("Number not in list, try again");
                         continue;
                     }
                 }
@@ -57,7 +60,7 @@ public class ArrayList_2{
             else if(option.equals("c"))
             {
                 for(int x:integers){
-                    System.out.println(x + " ");
+                    System.out.print(x + " ");
                 }
             }
 
