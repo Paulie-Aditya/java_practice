@@ -47,8 +47,23 @@ public class ArrayList_2{
         n = s.nextInt();
 
         while(n>0){
-            System.out.println("");
+            System.out.println("Enter number: ");
+            integers.add(s.nextInt());
+            n--;
         }
+
+    public static void removeElement(ArrayList<>() integers){
+        System.out.print("Enter number of elements to be removed: ");
+        n = s.nextInt();
+
+        while(n>0){
+            System.out.println("Enter number: ");
+            x = s.nextInt();
+            if (x )
+            integers.remove(x);
+            n--;
+        }
+    }
 
     }
 }
