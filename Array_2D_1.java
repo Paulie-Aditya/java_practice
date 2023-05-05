@@ -17,6 +17,13 @@ public class Array_2D_1{
     }
 
     private static void sum_columns(int[][] integers){
-        for(int j = 0)
+        for(int i = 0; i<integers[i].length;i++){
+            int sum = 0;
+            for(int j = 0; j<integers.length;j++){
+                sum+= integers[j][i];
+            }
+
+            System.out.println("Column "+(i+1)+": "+ sum);
+        }
     }
 }
