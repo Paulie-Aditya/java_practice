@@ -17,11 +17,11 @@ public class ArrayList_2{
         System.out.println("c. Display Elements");
         System.out.println("d. Exit");
 
-        while(True){
+        while(true){
             System.out.println("Enter Option: ");
-            char option = s.next().charAt(0);
+            String option = s.next().charAt(0);
 
-            ArrayList<Integers> integers = new ArrayList<>();
+            ArrayList<Integer> integers = new ArrayList<>();
 
             if (option.equals("a")){
                 addElement(integers);
@@ -51,6 +51,7 @@ public class ArrayList_2{
             integers.add(s.nextInt());
             n--;
         }
+    }
 
     public static void removeElement(ArrayList<>() integers){
         System.out.print("Enter number of elements to be removed: ");
@@ -59,11 +60,17 @@ public class ArrayList_2{
         while(n>0){
             System.out.println("Enter number: ");
             x = s.nextInt();
-            if (x )
-            integers.remove(x);
-            n--;
+            try{
+                integers.remove(x);
+                n--;
+            }catch(Exception e){
+                System.out.print("Number not in list, try again");
+                continue;
+            }
         }
     }
 
-    }
+
+
+
 }
