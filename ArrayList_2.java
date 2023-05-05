@@ -51,15 +51,21 @@ public class ArrayList_2{
                     }
                 }
             }
-            else if(option.equals("c")){
+
+            else if(option.equals("c"))
+            {
                 for(int x:integers){
                     System.out.println(x + " ");
                 }
             }
-            else if(option.equals("d")){
+
+            else if(option.equals("d"))
+            {
                 break;
             }
-            else{
+            
+            else
+            {
                 System.out.println("Invalid Option, Try Again.");
             }
         }
