@@ -24,15 +24,21 @@ public class Array_2D_1{
         }*/
 
         //int[][] integers = {{1,2,3},{4,5},{6,7,8,9}};
+        // Column 1 :11
+        // Column 2 :14
+        // Column 3 :11
+        // Column 4 :9
 
         for(int i = 0; i<integers[i].length;i++){
             int sum = 0;
             for(int j = 0; j<integers.length;j++){
-                sum+= integers[j][i];
+                try{
+                    sum+= integers[j][i];
+                    }catch(Exception e){
+                    sum+=0;
+                    }
                 }
-            }
-
             System.out.println("Column "+(i+1)+": "+ sum);
+            }
         }
     }
-}
