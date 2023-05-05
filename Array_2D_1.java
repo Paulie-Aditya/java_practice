@@ -20,7 +20,11 @@ public class Array_2D_1{
         for(int i = 0; i<integers[i].length;i++){
             int sum = 0;
             for(int j = 0; j<integers.length;j++){
-                sum+= integers[j][i];
+                try{
+                    sum+= integers[j][i];
+                }catch(Exception e){
+                    sum+=0;
+                }
             }
 
             System.out.println("Column "+(i+1)+": "+ sum);
