@@ -16,6 +16,7 @@ public class ArrayList_2{
         System.out.println("b. Remove Element");
         System.out.println("c. Display Elements");
         System.out.println("d. Exit");
+        
         ArrayList<Integer> integers = new ArrayList<>();
 
         while(true){
@@ -63,7 +64,7 @@ public class ArrayList_2{
             {
                 break;
             }
-            
+
             else
             {
                 System.out.println("Invalid Option, Try Again.");
