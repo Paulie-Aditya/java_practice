@@ -17,6 +17,6 @@ public class Array_2D_1{
     }
 
     private static void sum_columns(int[][] integers){
-        
+        for(int j = 0)
     }
 }
