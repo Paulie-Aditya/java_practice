@@ -17,13 +17,14 @@ public class Array_2D_1{
     }
 
     private static void sum_columns(int[][] integers){
+        max_length = 0
+        for(int x = 0;x<integers.length;x++){
+            if max_length<integers[x]
+        }
         for(int i = 0; i<integers[i].length;i++){
             int sum = 0;
             for(int j = 0; j<integers.length;j++){
-                try{
-                    sum+= integers[j][i];
-                }catch(Exception e){
-                    sum+=0;
+                sum+= integers[j][i];
                 }
             }
 
