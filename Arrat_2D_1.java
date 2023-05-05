@@ -12,7 +12,11 @@ public class Array_2D_1{
                 sum += integers[i][j];
             }
 
-            System.out.println("");
+            System.out.println("Row " + (i+1) + ": "+ sum);
         }
+    }
+
+    private static void sum_columns(int[][] integers){
+        
     }
 }
