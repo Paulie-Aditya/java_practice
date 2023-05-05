@@ -16,21 +16,45 @@ public class ArrayList_2{
         System.out.println("b. Remove Element");
         System.out.println("c. Display Elements");
         System.out.println("d. Exit");
+        ArrayList<Integer> integers = new ArrayList<>();
 
         while(true){
             System.out.println("Enter Option: ");
-            String option = s.next().charAt(0);
+            String option = s.next();
 
-            ArrayList<Integer> integers = new ArrayList<>();
+            if (option.equals("a"))
+            {
+                System.out.print("Enter number of elements to be added: ");
+                int n = s.nextInt();
 
-            if (option.equals("a")){
-                addElement(integers);
+                while(n>0){
+                    System.out.println("Enter number: ");
+                    integers.add(s.nextInt());
+                    n--;
+                    }
             }
-            else if (option.equals("b")){
-                removeElement(integers);
+
+            else if (option.equals("b"))
+            {
+                System.out.print("Enter number of elements to be removed: ");
+                int n = s.nextInt();
+
+                while(n>0){
+                    System.out.println("Enter number: ");
+                    int x = s.nextInt();
+                    try{
+                        integers.remove(x);
+                        n--;
+                    }catch(Exception e){
+                        System.out.print("Number not in list, try again");
+                        continue;
+                    }
+                }
             }
             else if(option.equals("c")){
-                displayElements(integers);
+                for(int x:integers){
+                    System.out.println(x + " ");
+                }
             }
             else if(option.equals("d")){
                 break;
@@ -42,33 +66,7 @@ public class ArrayList_2{
 
     }
 
-    public static void addElement(ArrayList<>() integers){
-        System.out.print("Enter number of elements to be added: ");
-        n = s.nextInt();
 
-        while(n>0){
-            System.out.println("Enter number: ");
-            integers.add(s.nextInt());
-            n--;
-        }
-    }
-
-    public static void removeElement(ArrayList<>() integers){
-        System.out.print("Enter number of elements to be removed: ");
-        n = s.nextInt();
-
-        while(n>0){
-            System.out.println("Enter number: ");
-            x = s.nextInt();
-            try{
-                integers.remove(x);
-                n--;
-            }catch(Exception e){
-                System.out.print("Number not in list, try again");
-                continue;
-            }
-        }
-    }
 
 
 
