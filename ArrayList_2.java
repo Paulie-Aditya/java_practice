@@ -7,6 +7,7 @@ Creating a menu program with the following options:
 */
 
 import java.util.Scanner;
+import java.util.ArrayList;
 public class ArrayList_2{
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
@@ -16,7 +17,7 @@ public class ArrayList_2{
         System.out.println("b. Remove Element");
         System.out.println("c. Display Elements");
         System.out.println("d. Exit");
-        
+
         ArrayList<Integer> integers = new ArrayList<>();
 
         while(true){
